@@ -290,8 +290,8 @@ description: Xiaodong's self-described contribution to the community.
   </div>
 
   <div class="row">
-    <div class="col-md-6 col-xs-11">
-     <h4> <a href="https://github.com/i2000s" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;" >
+    <div class="col-md-4 col-xs-11">
+     <h4> <a href="https://github.com/{{ site.author.github }}" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;" >
       <img src="{{site.url}}{{ site.baseurl }}/assets/img/icon-github.png" alt="github"> Coding </a></h4>
        <div class="excerpt" height="300px">
            <div class="scroll">
@@ -300,7 +300,7 @@ description: Xiaodong's self-described contribution to the community.
        </div>
     </div>
 
-    <div class="col-md-6 col-xs-11">
+    <div class="col-md-4 col-xs-11">
         <h4><a property="account" href="https://twitter.com/{{site.author.twitter}}" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><img src="{{ site.baseurl }}/assets/img/icon-twitter.png" height=45px alt="Twitter"> Discussing </a></h4>
         <div class="excerpt" height="300px">
             <div class="scroll">
@@ -308,12 +308,26 @@ description: Xiaodong's self-described contribution to the community.
             </div>
         </div>
      </div>
+
+    <div class="col-md-4 col-xs-11">
+     <h4> <a href="https://github.com/{{ site.author.github }}" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;" >
+      <img src="{{site.url}}{{site.baseurl}}/assets/img/icon-stackoverflow.png" height=40px></img> Reading </a></h4>
+       <div class="excerpt" height="300px">
+           <div class="scroll">
+                {% github_repo_feed i2000s, Archive, 5 %}
+           </div>
+       </div>
+    </div>
   </div>
 
   <!--<div class="row">
     <h2>My pholosophy on Open Science can be found <a href="/philosophy.html" target="_blank">here</a>. </h2>
     <br>
   </div> -->
+  <div class="row">
+    <h2>Here are some <a href="{{site.baseurl}}/tools.html" target="_blank">tools I use for work</a>. </h2>
+    <br>
+  </div>
 
 
 {% include footer.html %}
