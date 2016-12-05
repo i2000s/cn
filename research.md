@@ -21,10 +21,8 @@ My current on-going theory research projects include the following and are open 
 
 
 <center>
-![纳米光纤束缚冷原子系统极化测量系统](/cn/assets/img/NanofiberScheme.png){width=680px}
-<p>纳米光纤束缚冷原子系统极化测量系统示意图。图像取自 <a href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023817" target="_blank">X. Qi, B. Q. Baragiola, P. S. Jessen, I. H. Deutsch, Phys. Rev. A 93, 023817(2016)</a>.</p>
-<br />
-</center>
+{% include image.html img="/cn/assets/img/NanofiberScheme.png" width="680px" title="纳米光纤束缚冷原子系统极化测量系统" caption="<br />图1：纳米光纤束缚冷原子系统极化测量系统示意图。图像取自 <a href=‘http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023817’ target=’_blank’>X. Qi, B. Q. Baragiola, P. S. Jessen, I. H. Deutsch, Phys. Rev. A 93, 023817(2016)</a>." %}
+<br></center>
 
 In addition, through establishing the theoretical foundation of light-atom interaction on the nanofiber platform, I hope to reach the regime of nonlinear interaction between photons for quantum simulations/computations/communications,
 and to deeply understand the quantum behaviors of atoms and photons and the role of nanophotonic geometries for better integratable photonic systems for quantum information processing.  
