@@ -1,34 +1,48 @@
 ---
 layout: post
 title: 量子计算在信息处理方向的发展及展望
-subtitle: 一些随想
+subtitle: 一些早期的随想
 tags:
     - 量子信息
     - 量子计算
 categories:
     - 研究笔记
 ---
+## 题记
+本文写于三年前当我正在初步学习量子信息和量子计算理论时期，国际上又发生了一些事关网络信息安全的事件。今日看来，当时的一些想法或许有些欠成熟，很多涉及量子计算优越性本质的特性（比如量子系统张量乘积的维数递加现象）也未得到深入探讨，不过整体来看也许会对相关领域的初学者有一定的借鉴价值，而该领域的一些关键问题也远未得到圆满解决的共识。于是决定现把拙文放到这里，仅供参考，亦欢迎斧正。
+
 ## 导言
 
-2013年5月Google和NASA等宣布将联合成立量子人工智能实验室，他们将使用的量子计算机将是由D-wave公司制造的D-wave Two量子计算机。D-wave Two是继2011年5月卖给美国著名军火制造商洛克希德·马丁公司的世界上第一台商业量子计算机D-wave One的升级版。相比拥有128量子比特位的D-wave One系统， D-wave Two的计算核心超导电子芯片拥有512个量子位，计算芯片同样只有拇指大小,需要的工作温度也只高于绝对零度20微开尔文(2*10-5度)，其整个机柜大小相当于一个大型冷藏柜。而在对D-wave Two的性能测试中。D-wave Two平均仅用了不到半秒钟的时间就可以得到销售路线优化问题的最优解。而当时作为参照组的一个高性能经典（classical）计算机集群最快也要大概30分钟才能算出最优解。按照这个结果推算，D-wave Two量子计算机大概能够排到2012年11月发布的世界最快超级计算机排名表上的第十名。相比于一般超级计算机的巨大占地面积和功耗，D-wave Two实在是一个计算能力超强的小蚂蚁。按照预测量子计算机发展的“肉丝”定理（音译Rose’s Law），量子计算机的运算性能将在2014年前后超越所有的经典电子计算机，这也是D-wave正在开发制造的具有更高量子比特位的下一代量子计算机。同时，美国政府已经在研制可以破解当前绝大部分信息加密算法的量子计算机方面投入了大量的研究经费。一旦其研究成功，我们的金融、通信、个人隐私等方面就对美国政府不设防。
+2013年5月Google和NASA等宣布将联合成立量子人工智能实验室，他们将使用的量子计算机将是由D-wave公司制造的D-wave Two量子计算机。D-wave Two是继2011年5月卖给美国著名军火制造商洛克希德·马丁公司的世界上第一台商业量子计算机D-wave One的升级版。相比拥有128量子比特位的D-wave One系统， D-wave Two的计算核心超导电子芯片拥有512个量子位，计算芯片同样只有拇指大小,需要的工作温度也只高于绝对零度20微开尔文($2\times 10^{-5}K$)，其整个机柜大小相当于一个大型冷藏柜。而在对D-wave Two的性能测试中。D-wave Two平均仅用了不到半秒钟的时间就可以得到销售路线优化问题的最优解。而当时作为参照组的一个高性能经典（classical）计算机集群最快也要大概30分钟才能算出最优解。按照这个结果推算，D-wave Two量子计算机大概能够排到2012年11月发布的世界最快超级计算机排名表上的第十名。相比于一般超级计算机的巨大占地面积和功耗，D-wave Two实在是一个计算能力超强的小蚂蚁。按照预测量子计算机发展的“肉丝”定理（音译Rose’s Law），量子计算机的运算性能将在2014年前后超越所有的经典电子计算机，这也是D-wave正在开发制造的具有更高量子比特位的下一代量子计算机。同时，美国自然基金、军方和一些私募基金已经在研制可以破解当前绝大部分信息加密算法的量子计算机方面投入了大量的研究资助。一旦具有大数分解能力的量子计算机研制成功，我们现有的金融、通信等方面的加密机制将无法实现保密的目的。当然，好的方面是，目前难以求解的一些科学问题也很可能会在量子计算机的帮助下得以快速破解。
 
 为什么量子计算机具有这么强大的计算能力？为什么量子计算机会得到Google和其他前沿研究机构的青睐？笔者在这里将结合量子科技最近几年快速发展的形势，简单谈一谈量子计算和量子信息处理的一些基本知识和可能应用。
 
 ##强劲量子计算源于物理世界的智慧
 
-从信息单元上说，相比于经典计算机采用逻辑状态或者比特位(bit)作为信息单元的信息结构，量子计算机或者量子信息处理系统使用量子比特（qubit)作为信息单元。如果用0和1表示传统经典计算机的一个比特可以表征的信息，一个量子比特位可以同时表征0和1两个状态的叠加。通常我们使用狄拉克括号“|*>”来表示一个量子态，以区别于传统的计算机逻辑状态。任何一个量子态|ψ>都可以写成量子0态|0>和量子1态|1>的叠加。也就是说，如果写成数学式的形式，任意量子态可以表示成：|ψ>=a|0>+b|1>。其中a=<0|ψ>和b=<1|ψ>称之为这个量子态在量子态|0>或|1>上的概率幅。简单的说，这个量子状态实际上就是按照一定的概率分布可以同时出现在基本状态|0>或者|1>上的一种特殊叠加状态。其出现在|0>上的概率为对应概率幅的模方（绝对值的平方），即得到|0>的概率P(0)=P(0|ψ)=|a|2=|<0|ψ>|2；相应的，出现|1>的概率为P(1)=P(1|ψ)=|b|2=|<1|ψ>|2。其中我们定义P(c|ψ)表示当输入状态是|ψ>的条件下测得状态|c>的概率，而c可以是0或者1。按照一个只包含|0>和|1>两个基本状态的量子叠加态出现在这两个状态上的总概率必然为1的定义，我们可以得出概率幅的一个基本守恒关系，即P(0|ψ)+P(1|ψ) =|a|2+|b|2=1。
+从信息单元上说，相比于经典计算机采用逻辑状态或者比特位(bit)作为信息单元的信息结构，量子计算机或者量子信息处理系统使用量子比特(qubit)作为信息单元。如果用0和1表示传统经典计算机的一个比特可以表征的信息，一个量子比特位可以同时表征0和1两个状态的叠加。通常我们使用狄拉克括号“$\lvert *\rangle$”来表示一个量子态，以区别于传统的计算机逻辑状态。任何一个量子态$\ket{\Psi}$都可以写成量子0态$\ket{0}$和量子1态$\ket{1}$的叠加。也就是说，如果写成数学式的形式，任意量子态可以表示成：$\ket{\Psi}=a\ket{0}+b\ket{1}$。其中$a=\bra{0}\Psi\rangle$和$b=\bra{1}\Psi\rangle$称之为这个量子态在量子态$\ket{0}$或$\ket{1}$上的概率幅。简单的说，这个量子状态实际上就是按照一定的概率分布可以同时出现在基本状态$\ket{0}$或者$\ket{1}$上的一种特殊叠加状态。其出现在$\ket{0}$上的概率为对应概率幅的模方（绝对值的平方），即得到$\ket{0}$的概率$$P(0)=P(0\lvert\Psi)=|a|^2=\lvert\langle 0\vert \Psi\rangle\rvert^2.$$
+相应的，出现$\ket{1}$的概率为$$P(1)=P(1\vert \Psi)=|b|^2=|\langle 1\vert \Psi\rangle|^2.$$
+其中我们定义$P(c\vert \Psi)$表示当输入状态是$\ket{\Psi}$的条件下测得状态$\ket{c}$的概率，而$c$可以是$0$或者$1$。按照一个只包含$\ket{0}$和$\ket{1}$两个基本状态的量子叠加态出现在这两个状态上的总概率必然为$1$的定义，我们可以得出概率幅的一个基本守恒关系，即$P(0\vert\Psi)+P(1\vert\Psi) =|a|^2+|b|^2=1$。
 
-下面举个简单的例子来说明物理上如何实现这种具有叠加态的量子比特，及其这种叠加态不同于传统经典逻辑状态的一些性质。如图1所示，假设我们有一个光子（光的最小能量单元）入射到一个分束器上，该光子按照一定的比例分成了两种传播模式：我们定义垂直向上传播的光子态为|0>态，水平传播的光子态为|1>态。假设这个分束器允许光子按照原方向传播的概率为T,允许光子沿90°角反射传播的概率为R，那么一个入射光子态为|1>（水平传播）的光子经过该分束器后的量子态为|ψ>=r|0>+t|1>，这里|t|2=T及|r|2=R满足T+R=1的概率守恒条件。也就是说，任意一个量子态都可以通过这种利用改变分束器反射率或透射率的方法经分光得到。一般的，入射光可以是|1>态（水平入射），也可以是|0>态（竖直入射），这样通过分束器同样可以产生任意状态的量子态。当然，量子态只是一个抽象的概念，可以通过其他很多种方法产生，这里不再一一阐述。因为用上述光学方法产生量子态的方案比较直观而简单，我们继续基于这种方案探讨下量子态叠加的一些有趣性质。
+下面举个简单的例子来说明物理上如何实现这种具有叠加态的量子比特，及其这种叠加态不同于传统经典逻辑状态的一些性质。如图1所示，假设我们有一个光子（光的最小能量单元）入射到一个分束器上，该光子按照一定的比例分成了两种传播模式：我们定义垂直向上传播的光子态为$\ket{0}$态，水平传播的光子态为$\ket{1}$态。假设这个分束器允许光子按照原方向传播的概率为T,允许光子沿$90^\circ$角反射传播的概率为R，那么一个入射光子态为$\ket{1}$（水平传播）的光子经过该分束器后的量子态为$\ket{\Psi}=r\ket{0}+t\ket{1}$，这里$|t|^2=T$及$|r|^2=R$满足$T+R=1$的概率守恒条件。也就是说，任意一个量子态都可以通过这种利用改变分束器反射率或透射率的方法经分光得到。一般的，入射光可以是$\ket{1}$态（水平入射），也可以是$\ket{0}$态（竖直入射），这样通过分束器同样可以产生任意状态的量子态。当然，量子态只是一个抽象的概念，可以通过其他很多种方法产生，这里不再一一阐述。因为用上述光学方法产生量子态的方案比较直观而简单，我们继续基于这种方案探讨下量子态叠加的一些有趣性质。
 
-图 1：用分束器产生量子态示意图。矩形模块表示分束器，直线表示光路。
+<center>
+![Beamsplitter for quantum states]({{site.baseurl}}/assets/img/BeamSplitter.PNG)
+<p>图 1：用分束器产生量子态示意图。矩形模块表示分束器，直线表示光路。</p>
+</center>
 
-图 2：光子干涉装置示意图。空白矩形模块表示分束器，带斜纹的矩形模块为反射镜。光从左下端入射。
+<center>
+![MZ interferometry]({{site.baseurl}}/assets/img/MZinterferometer.PNG)
+<p>图 2：光子干涉装置示意图。空白矩形模块表示分束器，带斜纹的矩形模块为反射镜。光从左下端入射。</p>
+</center>
 
-如图2所示，在光路中我们对称的加入两个分束器和两个全反射镜片。光子从左下端口入射，经过第一个分束器之后产生了一个量子初态，然后分别经过两个对称的全反射镜后两个光路的传播方向交换，产生对第二个分束器的入射初态|φ>；这个量子态经过第二个分束器分束，最终产生了最终的出射量子态|ψ>=α|φα>+β|φβ>。其中| φα>和|φβ>是两个相反的状态，分别可以是|0>或者|1>态或者两个基本态的叠加态。这个装置的本质功能是实现量子态之间的干涉叠加。假设我们想知道出射量子态是|a>的概率P(a|ψ)。这里a可以是0也可以是1。那么这个概率可以用数学式写成
-P(a|ψ)=|⟨a│Ψ⟩|^2=|α⟨a│ϕ_α ⟩+β⟨a│ϕ_β ⟩ |^2
-=|α|^2 |〈a|ϕ_α 〉 |^2+|β|^2 〈a|ϕ_β 〉 |^2+αβ^* 〈a|ϕ_α 〉〈ϕ_β |a〉+α^* β〈a|ϕ_β 〉〈ϕ_α |a〉
-=P(a│ϕ_α )P(ϕ_α│Ψ)+P(a│ϕ_β )P(ϕ_β│Ψ)+αβ^* 〈a|ϕ_α 〉〈ϕ_β |a〉+α^* β〈a|ϕ_β 〉〈ϕ_α |a〉
-上面我们已经用到了复数模方的一些简单运算性质，星号上标表示取复共轭或者厄米共轭的运算。上式的第一项的数学意义为|├ Ψ⟩含有|├ ϕ_α ⟩的概率与|├ ϕ_α ⟩含有|├ a⟩态概率的乘积。第二项表示|├ Ψ⟩含有|├ ϕ_β ⟩的概率与|├ ϕ_β ⟩含有|├ a⟩态概率的乘积。后面两项成为光子干涉项。由条件概率乘积的性质可以知道，上式前两项已经从逻辑上完整的表示了|├ Ψ⟩含有|├ a⟩态的概率P(a|Ψ)！然而从以上严格的推导来看，P(a|Ψ)除了两个逻辑项外，还包含两个干涉项，而这两个干涉项在|├ ϕ_α ⟩和|├ ϕ_β ⟩均是|0>与|1>叠加态的情况下是不为0的！这种不符合经典逻辑概率关系的干涉性质正是量子态不同于经典逻辑态的一个基本性质，也是导致量子计算及量子信息处理可以具有超越传统经典计算机的一个根本所在。
+如图2所示，在光路中我们对称的加入两个分束器和两个全反射镜片。光子从左下端口入射，经过第一个分束器之后产生了一个量子初态，然后分别经过两个对称的全反射镜后两个光路的传播方向交换，产生对第二个分束器的入射初态$\ket{\phi}$；这个量子态经过第二个分束器分束，最终产生了最终的出射量子态$\ket{\Psi}=\alpha\ket{\phi_\alpha}+\beta\ket{\phi_\beta}$。其中$\ket{\phi_\alpha}$和$\ket{\phi_\beta}$是两个相反的状态，分别可以是$\ket{0}$或者$\ket{1}$态或者两个基本态的叠加态。这个装置的本质功能是实现量子态之间的干涉叠加。假设我们想知道出射量子态是$\ket{a}$的概率$P(a\vert\Psi)$。这里$a$可以是$0$也可以是$1$。那么这个概率可以用数学式写成
+$$\begin{align}
+&P(a\vert\Psi)=|\langle a\vert\Psi\rangle|^2=|\alpha\langle a\vert\phi_\alpha \rangle +\beta\langle a\vert \phi_\beta \rangle |^2\\
+=&|\alpha|^2 \vert\langle a\vert \phi_\alpha \rangle |^2+|\beta|^2 \langle a\vert \phi_\beta\rangle |^2+\alpha\beta^* \langle a\vert \phi_\alpha\rangle\langle\phi_\beta \vert a\rangle+\alpha^* \beta\langle a\vert\phi_\beta\rangle\langle\phi_\alpha\vert a\rangle\\
+=&\color{blue}{P(a\vert\phi_\alpha)P(\phi_\alpha\ket{\Psi}+P(a\vert\phi_\beta)P(\phi_\beta\vert\Psi)}
++\color{red}{\alpha\beta^* \bra{a}\phi_\alpha\rangle\langle \phi_\beta\ket{a}+\alpha^* \beta\langle a\ket{\phi_\beta}\langle \phi_\alpha \ket{a}}
+\end{align}$$
+上面我们已经用到了复数模方的一些简单运算性质，星号上标表示取复共轭或者厄米共轭的运算。上式的第一项的数学意义为$\ket{\Psi}$含有$\ket{\phi_\alpha}$的概率与$\ket{\phi_\alpha}$含有$\ket{a}$态概率的乘积。第二项表示$\ket{\Psi}$含有$\ket{\phi_\beta}$的概率与$\ket{\phi_\beta}$含有$\ket{a}$态概率的乘积。后面两项成为光子干涉项。由条件概率乘积的性质可以知道，上式前两项(我们称之为经典项)已经从逻辑上完整的表示了$\ket{\Psi}$含有$\ket{a}$态的概率$P(a\vert\Psi)$！然而从以上严格的推导来看，$P(a\vert\Psi)$除了两个逻辑项外，还包含两个干涉项，而这两个干涉项在$\ket{\phi_\alpha}$和$\ket{\phi_\beta}$均是$\ket{0}$与$\ket{1}$叠加态的情况下是不为0的！这种不符合经典逻辑概率关系的干涉性质正是量子态不同于经典逻辑态的一个基本性质，也是导致量子计算及量子信息处理可以具有超越传统经典计算机的一个根本所在。
 
 不仅限于状态叠加带来的于众不同的物理和数学性质，量子及广义概念上的物理世界里还有更多经典计算机不具有的性质被运用到了量子计算机的发展过程中。比如量子纠缠态这种现象，即两个物理体系（比如一个电子和一个光子）具有一定的关联关系的状态。当一个光子和一个电子形成纠缠态后，当一个光子被测量之后，电子可以唯一确定的立即塌缩到某个态上。利用量子纠缠这种性质，量子计算机可以将原来经典计算机要使用大量计算步骤甚至近乎无穷长的时间才能计算出来的问题只使用有限的几步快速解决掉。这通常被称为量子计算的指数加速性质。对应已知的具有指数加速性能的量子算法包括Shor的因式分解算法，Grover的检索算法等等。利用量子纠缠性质，人们也可以去实现更加安全的量子加密和量子保密通信。我国将在2016年发射的首颗量子通信实验卫星以及已经在芜湖和济南建成的量子通信实验网络就是利用这些量子物理性质实现的保密通信系统。相比于传统的依赖于数学加密算法的通信系统，量子保密通信系统彻底的杜绝了利用数学算法对通信内容进行密码破解的可能，是一种从物理层上实现信息加密的新型通信体系。
 
@@ -54,44 +68,41 @@ P(a|ψ)=|⟨a│Ψ⟩|^2=|α⟨a│ϕ_α ⟩+β⟨a│ϕ_β ⟩ |^2
 
 ##量子计算技术未来发展展望
 
-虽然量子计算机的商业化发展已经展开，但是目前已经开发的产品只适用于针对个别优化问题的解决，尚不具备通用计算能力。通用量子计算仍然是近几年的发展趋势，尚存大量的理论和实践问题需要解决。而最近世界上首个将原子集成到光子晶体波导上的突破等又为借助现有半导体平面技术实现新型量子计算机的物理实现展现了希望的曙光。总之，作为一个年轻的研究领域，量子计算正迎接着一次次的突破和创新。而为了帮助有志之士共同学习量子信息、量子计算和人工智能知识的需要，本文作者联同一些国际同行刚刚建立了一个开源社区。有兴趣的朋友可以通过http://iciq.github.io/进行访问。
+虽然量子计算机的商业化发展已经展开，但是目前已经开发的产品只适用于针对个别优化问题的解决，尚不具备通用计算能力。本质上，Ｄ-Wave所谓的量子计算机，不过是一种量子退化算法模拟器，只能用于个别优化问题的求解。通用量子计算仍然是近几年的发展趋势，尚存大量的理论和实践问题需要解决。而最近世界上首个将原子集成到光子晶体波导上及长相干量子点器件等的实验突破又为借助现有光通信系统和半导体平面技术实现新型量子计算机和量子通信系统的物理实现展现了希望的曙光。总之，作为一个年轻的研究领域，量子计算正迎接着一次次的突破和创新。
 
-致谢
-本文作者特别感谢马磊等朋友对本文撰稿和ICIQ开源社区搭建提供的各种无私帮助。
+## 致谢
+本文作者特别感谢马磊等朋友对本文撰稿和[ICIQ开源社区](http://iciq.github.io/)搭建提供的无私帮助。
 
 
 参考文献：
-1. About the performance of D-wave Two, http://www.gizmag.com/d-wave-quantum-computer-supercomputer-ranking/27476/
-2. What will Seth Lloyd's quantum computer company be like?, http://qbnets.wordpress.com/2013/08/30/what-will-seth-lloyds-quantum-computer-company-be-like/
-3. How Quantum Computers and Machine Learning Will Revolutionize Big Data, http://www.wired.com/wiredscience/2013/10/computers-big-data/
-4. A Blueprint for Building a Quantum Computer, http://cacm.acm.org/magazines/2013/10/168172-a-blueprint-for-building-a-quantum-computer/fulltext
+--------
+
+1. [About the performance of D-wave Two](http://www.gizmag.com/d-wave-quantum-computer-supercomputer-ranking/27476/).
+
+2. [What will Seth Lloyd's quantum computer company be like?](http://qbnets.wordpress.com/2013/08/30/what-will-seth-lloyds-quantum-computer-company-be-like/).
+
+3. [How Quantum Computers and Machine Learning Will Revolutionize Big Data](http://www.wired.com/wiredscience/2013/10/computers-big-data/).
+
+4. [A Blueprint for Building a Quantum Computer](http://cacm.acm.org/magazines/2013/10/168172-a-blueprint-for-building-a-quantum-computer/fulltext).
+
 5. Seth Lloyd, Programming the Universe: A Quantum Computer Scientist Takes on the Cosmos, Vintage (March 13, 2007)
-6. Scott Aaronson,Quantum Computing since Democritus, Cambridge University Press (March 14, 2013) (早期的在线版见http://zone-reflex.blogspot.com/2011/04/quantum-computing-since-democritus.html)
-7. 关于“肉丝”定理(Rose’s Law)，http://cacm.acm.org/opinion/articles/156081-roses-law-for-quantum-computers/fulltext
+
+6. Scott Aaronson,Quantum Computing since Democritus, Cambridge University Press (March 14, 2013) (早期的在线版见[这里](http://zone-reflex.blogspot.com/2011/04/quantum-computing-since-democritus.html)).
+
+7. [关于“肉丝”定理(Rose’s Law)](http://cacm.acm.org/opinion/articles/156081-roses-law-for-quantum-computers/fulltext).
+
 8. Michael A. Nielsen and Isaac L. Chuang，Quantum Computation and Quantum Information，Cambridge University Press; 10 Anv edition (January 31, 2011)
+
 9. Seth Lloyd，Masoud Mohseni，and Patrick Rebentrost. Quantum algorithms for supervised and unsupervised machine learning，2013（arXiv:1307.0411）
+
 10. Patrick Rebentrost, Masoud Mohseni, Seth Lloyd，Quantum support vector machine for big feature and big data classification，2013（arXiv:1307.0471）
+
 11. Seth Lloyd, Masoud Mohseni, Patrick Rebentrost，Quantum principal component analysis，2013（arXiv:1307.0401）
+
 12. Jacob Aron，Quantum links let computers understand language，New Scientist，Volume 208, Issue 2790, 2010, Pages 10–11。
+
 13. A. Goban, C.-L. Hung, S.-P. Yu, J. D. Hood, J. A. Muniz, J. H. Lee, M. J. Martin, A. C. McClung, K. S. Choi, D. E. Chang, O. Painter, H. J. Kimble，Atom-Light Interactions in Photonic Crystals，2013（arXiv:1312.3446）
+
 14. 一些值得推荐的在线教程笔记和教学视频和习题：
-John Priskill的在线教程： http://www.theory.caltech.edu/people/preskill/ph229/#lecture
-
-Carlton Caves关于量子信息的在线教程视频 http://info.phys.unm.edu/~caves/courses/qinfo-f12/syllabus.html
-
-
-
-References
-----------
-{% bibliography --cited_in_order --file References %}
-
-Footnotes
----------
-[^1]: If you only know quantum operators, superoperators are just
-another layer of operations on operators.
-Superoperator notations have been widely used to describe the evolution of open
-quantum systems where the concept of propagator can be fully characterized.
-[^a]: For mixed states, the state of the system cannot be written as a signle pure state, $\ket{\Psi}$ any more, in general. Instead, a density operator $\hat{\rho}=\sum_i p_i\ketbra{\Psi_i}{\Psi_i}$ as an ensemble decomposition of pure states, $\ket{\Psi_i}$, is used to characterize the system, where $p_i$ is the probability of being in the $\ket{\Psi_i}$ state.
-[^b]: Also see the [Quantum stochastic calculus](https://en.wikipedia.org/wiki/Quantum_stochastic_calculus) page for a quick review created by [Jonathan Gross](https://www.unm.edu/~jagross/) for a [Quantum Optics wikipedia project](https://iciq.github.io/entangle/WikipediaProject.html).
-[^c]: We will use this fact in my future notes on deriving quantum dynamic equations symbolically for general scenarios.
-[^d]: A brief summary on the relation between Lindblad equations and CP-map can be found in [Jess Riedel's blog](http://blog.jessriedel.com/2014/07/26/lindblad-equation-is-differential-form-of-cp-map/).
+  [John Priskill的在线教程](http://www.theory.caltech.edu/people/preskill/ph229/#lecture)、
+  [Carlton Caves关于量子信息的在线教程视频](http://info.phys.unm.edu/~caves/courses/qinfo-f12/syllabus.html)。
