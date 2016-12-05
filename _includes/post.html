@@ -13,8 +13,8 @@
         <!-- Custom sidebar -->
         <div class="span2">
           <div class="sidebar">
-            Posted on
-            <time pubdate datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>. <br>
+            发布于
+            <time pubdate datetime="{{ page.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>. <br>
             <span itemprop="keywords">
             {% for tag in page.tags %}
               <a rel="tag" class="tag" href="{{ site.baseurl }}/tags.html#{{ tag | cgi_escape }}-tag">#{{ tag }}</a>
@@ -22,9 +22,9 @@
             {% endfor %}
             </span>
             <div style="font-weight:bold; text-align:center;font-size:0.9em;">
-             <i class="icon-chevron-left"></i> <a href="{{ site.baseurl }}/archives.html">All posts by date, </a>
-             <i class="icon-list"></i> <a href="{{ site.baseurl }}/categories.html">by category, </a>
-             <i class="icon-tag"></i> <a href="{{ site.baseurl }}/tags.html">by tag.</a>
+             所有笔记分类：<i class="icon-chevron-left"></i> <a href="{{ site.baseurl }}/archives.html">按目录、 </a>
+             <i class="icon-list"></i> <a href="{{ site.baseurl }}/categories.html">按日期、 </a>
+             <i class="icon-tag"></i> <a href="{{ site.baseurl }}/tags.html">按标签</a>
             </div>
           </div>
         </div>
