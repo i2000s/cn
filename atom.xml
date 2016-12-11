@@ -2,9 +2,9 @@
 <feed xmlns="https://www.w3.org/2005/Atom">
 
  <title>戚晓东的研习笔记</title>
- <link href="https://www.qixiaodong.tk/cn/atom.xml" rel="self"/>
- <link href="https://www.qixiaodong.tk/cn"/>
- <updated>2016-12-10T09:33:48+00:00</updated>
+ <link href="/cn/atom.xml" rel="self"/>
+ <link href="/cn"/>
+ <updated>2016-12-11T11:12:55+00:00</updated>
  <id>https://www.qixiaodong.tk/cn</id>
  <author>
    <name>戚晓东</name>
@@ -14,7 +14,7 @@
  
  <entry>
    <title>量子计算在信息处理方向的发展及展望</title>
-   <link href="https://www.qixiaodong.tk/cn/2014/03/01/future-of-quantum-information-processing.html"/>
+   <link href="/cn/2014/03/01/future-of-quantum-information-processing.html"/>
    <updated>2014-03-01T00:00:00+00:00</updated>
    <id>/2014/03/01/future-of-quantum-information-processing</id>
    <content type="html">&lt;h2 id=&quot;题记&quot;&gt;题记&lt;/h2&gt;
