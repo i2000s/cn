@@ -1,23 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="https://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>戚晓东的研习笔记</title>
+    <description>探索量子世界</description>
+    <link>https://www.qixiaodong.tk/cn</link>
+    <atom:link href="https://www.qixiaodong.tk/cn/atom.xml" rel="self" type="application/rss+xml" />
 
- <title>戚晓东的研习笔记</title>
- <link href="/cn/atom.xml" rel="self"/>
- <link href="/cn"/>
- <updated>2017-06-25T00:21:02+00:00</updated>
- <id>https://www.qixiaodong.tk/cn</id>
- <author>
-   <name>戚晓东</name>
-   <email>i2000s@hotmail.com</email>
- </author>
-
- 
- <entry>
-   <title>科研人员应该掌握的科学编程合作工具知识</title>
-   <link href="/cn/2017/06/03/computing-workshop-for-scientists.html"/>
-   <updated>2017-06-03T00:00:00+00:00</updated>
-   <id>/2017/06/03/computing-workshop-for-scientists</id>
-   <content type="html">&lt;p&gt;近期，我跟其他几个熟悉现代计算机编程开发的博士生在我所在的量子信息与操控研究中心举办了三堂每次5小时的&lt;a href=&quot;https://cquic.unm.edu/cquic-news/computing-workshops/&quot;&gt;计算机研习培训&lt;/a&gt;，将我们所认为比较重要的计算机辅助科研的一些技术知识传授给研究中心的其他学生。 希望起到抛砖引玉，提高研究中心学生和老师工作效率的作用。 培训涵盖了以下几个方面：&lt;/p&gt;
+   
+        <item>
+          <title>科研人员应该掌握的科学编程合作工具知识</title>
+          <description>&lt;p&gt;近期，我跟其他几个熟悉现代计算机编程开发的博士生在我所在的量子信息与操控研究中心举办了三堂每次5小时的&lt;a href=&quot;https://cquic.unm.edu/cquic-news/computing-workshops/&quot;&gt;计算机研习培训&lt;/a&gt;，将我们所认为比较重要的计算机辅助科研的一些技术知识传授给研究中心的其他学生。 希望起到抛砖引玉，提高研究中心学生和老师工作效率的作用。 培训涵盖了以下几个方面：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;数据可视化&lt;/li&gt;
 &lt;li&gt;Shell指令基础&lt;/li&gt;
@@ -32,15 +24,15 @@
 &lt;div class=&quot;references&quot;&gt;
 
 &lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>对近期一些量子计算进展的评论</title>
-   <link href="/cn/2017/05/07/comment-on-recent-quantum-computing-progress.html"/>
-   <updated>2017-05-07T00:00:00+00:00</updated>
-   <id>/2017/05/07/comment-on-recent-quantum-computing-progress</id>
-   <content type="html">&lt;p&gt;刚刚注意到最近国内一些有关量子计算方面的进展报道，特别是有些媒体在显要位置刊登了诸如带有“中国发布了首台量子计算机”标题的文章。报道本质上是围绕潘老师跟其他研究组在去年年末和近期在光子线路和超导量子线路体系上实现了10个量子比特的纠缠态，并演示了利用量子算法求解量子线性方程组的能力等进展。但是报道里面捎带的评论大有夸大其词的嫌疑。特发此短评，希望能对不知情的知识分子界提供些许的参考，也希望藉此获得更多来自国内同行的反馈。欢迎批评指正。&lt;/p&gt;
+</description>
+          <link>https://www.qixiaodong.tk/cn/2017/06/03/computing-workshop-for-scientists.html</link>
+          <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
+          <guid isPermaLink="true">https://purl.org/qxd/cn/2017/06/03/computing-workshop-for-scientists.html</guid>
+        </item>
+   
+        <item>
+          <title>对近期一些量子计算进展的评论</title>
+          <description>&lt;p&gt;刚刚注意到最近国内一些有关量子计算方面的进展报道，特别是有些媒体在显要位置刊登了诸如带有“中国发布了首台量子计算机”标题的文章。报道本质上是围绕潘老师跟其他研究组在去年年末和近期在光子线路和超导量子线路体系上实现了10个量子比特的纠缠态，并演示了利用量子算法求解量子线性方程组的能力等进展。但是报道里面捎带的评论大有夸大其词的嫌疑。特发此短评，希望能对不知情的知识分子界提供些许的参考，也希望藉此获得更多来自国内同行的反馈。欢迎批评指正。&lt;/p&gt;
 &lt;p&gt;就在前几个月，Google在学术会议上宣布今年计划完成49量子比特的量子计算机研发。目前经典超级计算机能够模拟的最大规模量子计算机是49量子比特，如果实验室能够实现高于49比特的量子计算机，任何经典计算机都无法在有限时间内模拟其运算过程。从公开文献和外部报道的信息看，我认为国内搞的量子计算机侧重于某些固定结构的算法实现，所以能否通用，我无法下结论。此前的报道有标题党嫌疑。&lt;/p&gt;
 &lt;p&gt;量子计算机跟经典计算机的最大不同在于实现了微弱量子态的制备和控制，取代了基于经典比特态的信息处理方式。其很多效应意味着经典计算机算法的终结。比如，量状态不能复制（no-cloning principle)，其结果意味着经典计算机算法里面常用的将一个变量复制到另一个变量的复制操作不再适用于量子计算机；而且经典计算机的循环和条件操作因为必须要测量比特信息，在量子计算机里面这种操作就意味着对量子态的破坏或塌缩（collapse)，所以也不能在量子计算机里面直接用。而量子计算机对具体问题的运算大概就需要不断的对自己的线路整体结构不断的变化和调正，每一种结构对应解决一种特定的问题，而不是基于对比特态测量后的结果再行判断下一步要将晶体管的开关转换到什么状态。据我所知，在实验室要制备10个光子的纠缠态尚且需要大量的准备时间，而且重复实现比较困难，如何将这些操作自动化、精细化、可控化，也许还有很长的路要走。更不要谈如何实现对更广泛领域的推广应用问题。&lt;/p&gt;
 &lt;p&gt;另外，要实现一个或者若干个量子态的操作尚且困难，要实现这些量子态的可纠错操作将更加困难。量子态从某种意义上说，是极其脆弱的，很容易受到外界环境波动的影响，量子纠错作为一个必要的措施来抵抗各种错误的发生是实现通用量子计算机的重要条件。这就像去实现一个复杂的系统–比如像组织一个国家的运行，即使每个关键的部件或者人有时候变得并不可靠，但只要在系统层面上有足够的冗余性和优化选择的机制，整个系统仍然可以是可靠的。所以最终量子计算机的每一个量子比特都要配以若干的系统冗余来对抗各种单元部件和单步操作的内秉失误率，以实现系统级的可靠性。特别是对某些计算来说，由于其计算结果已经超过了任何经典超级计算机所能模拟验证的极限，如果量子计算机不能证明其本身是可靠的，没人能够简单认可或证实其计算结果是否有价值。其因增加可靠性而要付出的代价几乎是随着量子比特位数指数级增长的，所以更高量子比特位通用量子计算的实现并非比10个量子比特位系统更简单，或者难度线性增加，而是更高数量级的越发困难。&lt;/p&gt;
@@ -49,15 +41,15 @@
 &lt;div class=&quot;references&quot;&gt;
 
 &lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>量子计算在信息处理方向的发展及展望</title>
-   <link href="/cn/2014/03/01/future-of-quantum-information-processing.html"/>
-   <updated>2014-03-01T00:00:00+00:00</updated>
-   <id>/2014/03/01/future-of-quantum-information-processing</id>
-   <content type="html">&lt;h2 id=&quot;题记&quot;&gt;题记&lt;/h2&gt;
+</description>
+          <link>https://www.qixiaodong.tk/cn/2017/05/07/comment-on-recent-quantum-computing-progress.html</link>
+          <pubDate>Sun, 07 May 2017 00:00:00 +0000</pubDate>
+          <guid isPermaLink="true">https://purl.org/qxd/cn/2017/05/07/comment-on-recent-quantum-computing-progress.html</guid>
+        </item>
+   
+        <item>
+          <title>量子计算在信息处理方向的发展及展望</title>
+          <description>&lt;h2 id=&quot;题记&quot;&gt;题记&lt;/h2&gt;
 &lt;p&gt;本文写于三年前当我正在初步学习量子信息和量子计算理论时期，国际上又发生了一些事关网络信息安全的事件。今日看来，当时的一些想法或许有些欠成熟，很多涉及量子计算优越性本质的特性（比如量子系统张量乘积的维数递加现象，可逆性，低能耗性）也未得到深入探讨，不过整体来看也许会对相关领域的初学者有一定的借鉴价值，而该领域的一些关键问题也远未得到圆满解决的共识。于是决定现把拙文放到这里，仅供参考，亦欢迎斧正。&lt;/p&gt;
 &lt;h2 id=&quot;导言&quot;&gt;导言&lt;/h2&gt;
 &lt;p&gt;2013年5月Google和NASA等宣布将联合成立量子人工智能实验室，他们将使用的量子计算机将是由D-wave公司制造的D-wave Two量子计算机。D-wave Two是继2011年5月卖给美国著名军火制造商洛克希德·马丁公司的世界上第一台商业量子计算机D-wave One的升级版。相比拥有128量子比特位的D-wave One系统， D-wave Two的计算核心超导电子芯片拥有512个量子位，计算芯片同样只有拇指大小,需要的工作温度也只高于绝对零度20微开尔文(&lt;span class=&quot;math&quot;&gt;\(2\times 10^{-5}K\)&lt;/span&gt;)，其整个机柜大小相当于一个大型冷藏柜。而在对D-wave Two的性能测试中。D-wave Two平均仅用了不到半秒钟的时间就可以得到销售路线优化问题的最优解。而当时作为参照组的一个高性能经典（classical）计算机集群最快也要大概30分钟才能算出最优解。按照这个结果推算，D-wave Two量子计算机大概能够排到2012年11月发布的世界最快超级计算机排名表上的第十名。相比于一般超级计算机的巨大占地面积和功耗，D-wave Two实在是一个计算能力超强的小蚂蚁。按照预测量子计算机发展的“肉丝”定理（音译Rose’s Law），量子计算机的运算性能将在2014年前后超越所有的经典电子计算机，这也是D-wave正在开发制造的具有更高量子比特位的下一代量子计算机。同时，美国自然基金、军方和一些私募基金已经在研制可以破解当前绝大部分信息加密算法的量子计算机方面投入了大量的研究资助。一旦具有大数分解能力的量子计算机研制成功，我们现有的金融、通信等方面的加密机制将无法实现保密的目的。当然，好的方面是，目前难以求解的一些科学问题也很可能会在量子计算机的帮助下得以快速破解。&lt;/p&gt;
@@ -119,8 +111,11 @@
 &lt;div class=&quot;references&quot;&gt;
 
 &lt;/div&gt;
-</content>
- </entry>
- 
-
-</feed>
+</description>
+          <link>https://www.qixiaodong.tk/cn/2014/03/01/future-of-quantum-information-processing.html</link>
+          <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+          <guid isPermaLink="true">https://purl.org/qxd/cn/2014/03/01/future-of-quantum-information-processing.html</guid>
+        </item>
+   
+  </channel>
+</rss>
