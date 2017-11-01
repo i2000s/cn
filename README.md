@@ -39,11 +39,17 @@ Additional Site Features & Credits
 * Source code hosting on [Github](https://github.com/ketch/labnotebook) with automatic deployment using [Travis-CI](http://travis-ci.org) and Rake
 * Improved "related posts" plugin from [David Lynch](https://github.com/kemayo/davidlynch.org/blob/master/_plugins/related_posts.rb)
 * Improved publication and citation support from [Jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) with some customizations
+* Pull BibTeX database of bibliography from an external repository using [submodule](https://git-scm.com/docs/git-submodule) for centralized bibliography management
 
 Instruction on hosting the site locally
 =======================================
 I use Ubuntu 16.04 LTS OS to generate the static website from source code.
 Instructions on other operating systems should be similar.
+The first thing to do is to clone the remote repository files to your local computer by
+```
+git clone --recursive https://github.com/i2000s/cn.git
+```
+where the `--recursive` option is to make sure submodules (if any) are pulled down completely.
 
 If you run Jekyll sites for the first time, you may need to install Ruby v2.3.* (tested on v2.3.0 and v2.3.1) and the `gem` development envirenment.
 I was basically following [this instruction](http://tecadmin.net/install-ruby-on-rails-on-ubuntu/) on my Ubuntu,
@@ -110,7 +116,7 @@ I encourage you to post an issue or make a pull request on this repo or the orig
 Only in this way, the network of people who have adapted this design to their sites can benefit most from the continuous improvement by the community who are following this body of code for open science and beyond.
 Below are the minimum changes you need to make to serve your own purpose of using the source code.
 
-1. Fork this repo under your GitHub account.
+1. Fork this repo under your GitHub account, and then clone the repo to your local folder by `git clone --recursive YOURGITREPOREMOTE`.
 
 2. Change information defined in the `_config.yml` file for your case.
 There you will find definitions for your site, Github account and repo information, as well as your personal contact information.
