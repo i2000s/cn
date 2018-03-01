@@ -36,7 +36,7 @@ navigation: # For the navigation menu. Don't use index.html. urls should end wit
     url: /pubs/
   - text: 社区
     url: /community/
-  - text: English
+  - text: 英文分站
     url: https://www.qixiaodong.tk/en/
 
 permalink: /:year/:month/:day/:title.html
