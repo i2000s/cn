@@ -32,6 +32,8 @@ PS: 我的答辩录像在 [YouKu](https://v.youku.com/v_show/id_XMzU1MTg3Mzk0OA=
 
 ### 2. 我可以提供的博士论文以外的相关研究的学术报告内容：
 
++ 晶格上的集体激发和振动模式问题。
+
 + 基于原子间散射导致的光波导光格子系统最优控制的初步分析和波色取样问题在原子系统上的实验实现等方面的潜在应用等构想。
 
     ***Abstract for this part:*** I will briefly discuss a preliminary work on the feasibility of optimal control of atoms preloaded in an optical lattice near a nanophotonic waveguide.
