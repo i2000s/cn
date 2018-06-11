@@ -4,8 +4,12 @@ title: 回国访问交流计划
 tags:
     - 量子信息
     - 量子计算
+    - 冷原子
+    - 量子操控
+    - 量子非破坏测量
+    - 自选压缩
 categories:
-    - 社区建设
+    - 学术交流
 ---
 
 我将会在6月11日回国并于次日下午抵达北京。我个人已安排了在北京，太原，杭州等城市访问有关高校、研究所和企业研究机构的部分行程，希望能将我在美国新墨西哥大学所学所得向更多感兴趣的中国实验室同仁提供力所能及的学术报告和详细的交流讨论。我更希望借此机会对中国在量子信息和量子计算方面的研究现状和下一步需要抓紧攻克的大致方向以我个人的视角有个初步的调研，以帮助我判断是否可以留在国内相关领域直接为国家相关领域的科技创新活动提供直接的些微贡献。如果您对我的研究内容和未来的初步研究方向感兴趣，欢迎及时与我联系，我将综合考虑，尽可能安排双方都满意的行程计划提供学术报告或者见面交流的支持。由于此次旅行纯粹为我个人发起，经费自筹，希望真正有兴趣的研究单位能提供一定的经费支持，本人将由衷的感激。由于准备时间有限，行程安排紧张，我了解的人员团队信息也有限，如果我不能及时回复您的信息，敬请原谅。由于我的知识水平有限，行程随机性大，并且在国外8年来很少有机会接触国内的人员和文化氛围，如有考虑不周及疏忽的地方，不妨直接指出，以便我持续改进并使您满意。计划访问2-4周时间再回家，或者中间回家休整一段时间再安排第二阶段的行程。欢迎转发给相关人员。
@@ -30,7 +34,7 @@ PS: 我的答辩录像在 [YouKu](https://v.youku.com/v_show/id_XMzU1MTg3Mzk0OA=
 
 + 基于原子间散射导致的光波导光格子系统最优控制的初步分析和波色取样问题在原子系统上的实验实现等方面的潜在应用等构想。
 
-    ***Abstract for this part:*** I will briefly discuss a preliminary work on the feasibility of optimal control of atoms preloaded on an optical lattice near a nanophotonic waveguide.
+    ***Abstract for this part:*** I will briefly discuss a preliminary work on the feasibility of optimal control of atoms preloaded in an optical lattice near a nanophotonic waveguide.
 The controllability of the system relies on the enhanced inhomogeneous interactions due to multiple scattering of photons among atoms and the global control of internal atomic states of the atoms and the lattice geometry using a microwave control field and the guided modes of the waveguide near the atoms.
 I will discuss our protocol and demonstrate numerical evidences that one may be able to design universal optimal control waveforms to generate arbitrary collective states and unitary evolution operators in a product quantum space of atoms' internal states and lattice states with a finite size.
 An immediate application of our protocol is to demonstrate Boson sampling and hence the quantum supremacy using atoms or atom-like particles on an optical lattice.
