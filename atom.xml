@@ -8,6 +8,56 @@
 
    
         <item>
+          <title>回国访问交流计划</title>
+          <description>&lt;p&gt;我将会在6月11日回国并于次日下午抵达北京。我个人已安排了在北京，太原，杭州等城市访问有关高校、研究所和企业研究机构的部分行程，希望能将我在美国新墨西哥大学所学所得向更多感兴趣的中国实验室同仁提供力所能及的学术报告和详细的交流讨论。我更希望借此机会对中国在量子信息和量子计算方面的研究现状和下一步需要抓紧攻克的大致方向以我个人的视角有个初步的调研，以帮助我判断是否可以留在国内相关领域直接为国家相关领域的科技创新活动提供直接的些微贡献。如果您对我的研究内容和未来的初步研究方向感兴趣，欢迎及时与我联系，我将综合考虑，尽可能安排双方都满意的行程计划提供学术报告或者见面交流的支持。由于此次旅行纯粹为我个人发起，经费自筹，希望真正有兴趣的研究单位能提供一定的经费支持，本人将由衷的感激。由于准备时间有限，行程安排紧张，我了解的人员团队信息也有限，如果我不能及时回复您的信息，敬请原谅。由于我的知识水平有限，行程随机性大，并且在国外8年来很少有机会接触国内的人员和文化氛围，如有考虑不周及疏忽的地方，不妨直接指出，以便我持续改进并使您满意。计划访问2-4周时间再回家，或者中间回家休整一段时间再安排第二阶段的行程。欢迎转发给相关人员。&lt;/p&gt;
+&lt;h3 id=&quot;我可以直接基于我的博士论文提供的学术报告主题内容可节选&quot;&gt;1. 我可以直接基于我的&lt;a href=&quot;https://zenodo.org/badge/latestdoi/91208437&quot;&gt;博士论文&lt;/a&gt;提供的学术报告主题内容（可节选）：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Title: Dispersive Quantum Interface with Atoms and Nanophotonic Waveguides&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Abstract:&lt;/em&gt;&lt;/strong&gt; Strong coupling between atoms and light is critical for quantum information processing and precise sensing. A nanophotonic waveguide is a promising platform for realizing an atom-light interface that reaches the strong coupling regime. We study the dispersive response theory of the nanowaveguide system as the means to create an entangling atom-light interface, with applications to quantum non-demolition (QND) measurement and spin squeezing.&lt;/p&gt;
+&lt;p&gt;We calculate the dyadic Green’s function, which determines the scattering of light by atoms in the presence of a nanowaveguide, and thus the phase shift and polarization rotation induced on the guided light. The Green’s function is related to the full Heisenberg-Langevin treatment of the dispersive response of the quantized field to tensor polarizable atoms. Using the Green’s tensors, we calculate the modified spontaneous emission rates for classical dipoles and quantum alkali atoms.&lt;/p&gt;
+&lt;p&gt;We model QND measurement and spin squeezing using first-principles stochastic master equations. Based on the birefringence effect, we propose a spin squeezing protocol for the spins encoded in the clock transition of cesium-133. We generalize the concept of cooperativity, which is determined by the ratio between the measurement strength and the decoherence rate in the context of the dispersive waveguide interface. By maximizing the cooperativity per atom, we find the optimal choice of quantization axis that defines the clock states. With this, we predict a peak squeezing of 4.7 dB with 2500 atoms trapped along a realistic nanofiber.&lt;/p&gt;
+&lt;p&gt;To enhance the squeezing and for applications in magnetometry, we propose a protocol based on the Faraday effect for a nanofiber and a square waveguide. Counterintuitively, by placing the atoms at an azimuthal position where the guided probe mode has the lowest intensity, we increase the cooperativity. This arises because the measurement strength depends on the interference between the probe and scattered light into an orthogonal mode, while the decoherence rate depends on the local intensity of the probe. We find 6.3 dB and 13 dB of peak squeezing for the nanofiber and the square waveguide, respectively, with 2500 atoms.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;PS: 我的答辩录像在 &lt;a href=&quot;https://v.youku.com/v_show/id_XMzU1MTg3Mzk0OA==.html&quot;&gt;YouKu&lt;/a&gt; 或者 &lt;a href=&quot;https://vimeo.com/274035008?activityReferer=1&quot;&gt;Vimeo&lt;/a&gt; 可以在线观看。 毕业论文PDF可以在 &lt;a href=&quot;https://github.com/i2000s/PhD_Thesis/releases&quot;&gt;Github&lt;/a&gt; 上下载。&lt;/p&gt;
+&lt;h3 id=&quot;我可以提供的博士论文以外的相关研究的学术报告内容&quot;&gt;2. 我可以提供的博士论文以外的相关研究的学术报告内容：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;基于原子间散射导致的光波导光格子系统最优控制的初步分析和波色取样问题在原子系统上的实验实现等方面的潜在应用等构想。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Abstract for this part:&lt;/em&gt;&lt;/strong&gt; I will briefly discuss a preliminary work on the feasibility of optimal control of atoms preloaded on an optical lattice near a nanophotonic waveguide. The controllability of the system relies on the enhanced inhomogeneous interactions due to multiple scattering of photons among atoms and the global control of internal atomic states of the atoms and the lattice geometry using a microwave control field and the guided modes of the waveguide near the atoms. I will discuss our protocol and demonstrate numerical evidences that one may be able to design universal optimal control waveforms to generate arbitrary collective states and unitary evolution operators in a product quantum space of atoms’ internal states and lattice states with a finite size. An immediate application of our protocol is to demonstrate Boson sampling and hence the quantum supremacy using atoms or atom-like particles on an optical lattice.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;PS: 控制波形设计的原理性动画演示可以在&lt;a href=&quot;https://v.youku.com/v_show/id_XMzY1NjYxOTE2NA.html&quot;&gt;YouKu&lt;/a&gt;上预览.&lt;/p&gt;
+&lt;h3 id=&quot;我可以提供非正式交流的主题&quot;&gt;3. 我可以提供非正式交流的主题：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;报告内容以外涉及我的研究方向的更广泛学术专业讨论。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;量子计算软件系统建设。这部分主要是基于我参与发起的&lt;a href=&quot;https://JuliaQuantum.github.io&quot;&gt;JuliaQuantum&lt;/a&gt;软件组织的一些工作经历，包括整体规划、理论基础、应用目标、运行机制、软硬件同步开发和与外界系统的合作等内容。我也很想听听国内同仁的各种想法和现实的软硬件工程化条件和具体宏观、微观规划。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;新型编程语言及在未来硬件系统上的实现。我没有太多直接的经验，不过通过参与跟我们这边实验合作者一起完成的实际原子系统的仿真和具体控制编程等工作，以及对Julia等新型编程语言的早期跟踪参与，多少对编译器、汇编实现等有些感想。可以参与包括JuliaMeetup在内的互动活动。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;关于科研环境和教学体系建设的交流讨论。我个人的思考主要是基于我在加拿大Queen’s University和美国新墨西哥大学的体会，包括参与其理论物理研究，接受中美加不同风格的课堂教育，特别是新墨西哥大学量子研究教育所传承的从Roy Glauber, Marlan Scully到Carlton Caves和Ivan Deutsch一脉相承的注重学生能力培养的教育科研氛围，以及对过往我在国内的有限早期经历。希望通过交流讨论了解国内学术环境和发展方向，探讨一些可以立足国内情况付诸实施的科研、教学方法。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;各地人文和自然环境。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;目前已经明确的行程安排&quot;&gt;4. 目前已经明确的行程安排：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;6月12日至17日在北京行程：
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;12日（周二）：日程已排满。&lt;/li&gt;
+&lt;li&gt;13日（周三）：上午时间已有安排。&lt;/li&gt;
+&lt;li&gt;14日（周四）：下午已有安排。&lt;/li&gt;
+&lt;li&gt;16日（周六）：晚餐时间已有安排。&lt;/li&gt;
+&lt;li&gt;17日（周日）：下午离京。&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;6月18日后在太原行程：
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;18–19日已有安排。&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+          <link>https://www.qixiaodong.tk/cn/2018/06/10/visiting-plan-in-China.html</link>
+          <pubDate>Sun, 10 Jun 2018 00:00:00 +0000</pubDate>
+          <guid isPermaLink="true">https://purl.org/qxd/cn/2018/06/10/visiting-plan-in-China.html</guid>
+        </item>
+   
+        <item>
           <title>科研人员应该掌握的科学编程合作工具知识</title>
           <description>&lt;p&gt;近期，我跟其他几个熟悉现代计算机编程开发的博士生在我所在的量子信息与操控研究中心举办了三堂每次5小时的&lt;a href=&quot;https://cquic.unm.edu/cquic-news/computing-workshops/&quot;&gt;计算机研习培训&lt;/a&gt;，将我们所认为比较重要的计算机辅助科研的一些技术知识传授给研究中心的其他学生。 希望起到抛砖引玉，提高研究中心学生和老师工作效率的作用。 培训涵盖了以下几个方面：&lt;/p&gt;
 &lt;ul&gt;
