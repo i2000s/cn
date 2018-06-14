@@ -14,6 +14,10 @@ categories:
 
 ## Title: Dispersive Quantum Interface with Atoms and Nanophotonic Waveguides
 
++ ***时间:*** 2018-06-15 10:00am
+
++ ***地点:*** 理科楼 A404
+
 + ***Abstract:*** Strong coupling between atoms and light is critical for quantum information processing and precise sensing. A nanophotonic waveguide is a promising platform for realizing an atom-light interface that reaches the strong coupling regime. We study the dispersive response theory of the nanowaveguide system as the means to create an entangling atom-light interface, with applications to quantum non-demolition (QND) measurement and spin squeezing.
 We propose an enhanced QND measurement and spin squeezing protocol based on the Faraday effect, which is modeled using first-principles stochastic master equations.
 We simulate the metrological squeezing effect for a nanofiber and a square waveguide. Counterintuitively, by placing the atoms at an azimuthal position where the guided probe mode has the lowest intensity, we increase the cooperativity.  This arises because the measurement strength depends on the interference between the probe and scattered light into an orthogonal mode, while the decoherence rate depends on the local intensity of the probe. We find 6.3 dB and 13 dB of peak squeezing for the nanofiber and the square waveguide, respectively, with 2500 atoms.
