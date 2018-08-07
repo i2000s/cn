@@ -5,7 +5,7 @@
   
     <url>
       <loc>https://www.qixiaodong.tk/cn/2018/06/10/visiting-plan-in-China.html</loc>
-      <lastmod>2018-06-23T15:21:22+00:00</lastmod>
+      <lastmod>2018-08-07T07:29:20+00:00</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>
@@ -14,7 +14,7 @@
   
     <url>
       <loc>https://www.qixiaodong.tk/cn/2017/06/03/computing-workshop-for-scientists.html</loc>
-      <lastmod>2017-12-11T03:55:13+00:00</lastmod>
+      <lastmod>2018-01-23T05:53:07+00:00</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>
@@ -32,7 +32,7 @@
   
     <url>
       <loc>https://www.qixiaodong.tk/cn/2014/03/01/future-of-quantum-information-processing.html</loc>
-      <lastmod>2017-12-11T03:55:13+00:00</lastmod>
+      <lastmod>2018-01-23T05:53:07+00:00</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>
@@ -97,8 +97,19 @@
   
     
       <url>
+        <loc>https://www.qixiaodong.tk/cn/assets/talks/2018-08-UESTC</loc>
+        <lastmod>2018-08-07T07:29:20+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
         <loc>https://www.qixiaodong.tk/cn/README</loc>
-        <lastmod>2017-12-11T03:55:13+00:00</lastmod>
+        <lastmod>2018-01-23T05:53:07+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
        </url>
@@ -132,7 +143,7 @@
     
       <url>
         <loc>https://www.qixiaodong.tk/cn/</loc>
-        <lastmod>2017-12-11T03:55:13+00:00</lastmod>
+        <lastmod>2018-01-23T05:53:07+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
        </url>
@@ -143,7 +154,7 @@
     
       <url>
         <loc>https://www.qixiaodong.tk/cn/notebooks</loc>
-        <lastmod>2017-12-11T03:55:13+00:00</lastmod>
+        <lastmod>2018-01-23T05:53:07+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
        </url>
@@ -154,7 +165,7 @@
     
       <url>
         <loc>https://www.qixiaodong.tk/cn/philosophy</loc>
-        <lastmod>2017-12-11T03:55:13+00:00</lastmod>
+        <lastmod>2018-01-23T05:53:07+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
        </url>
@@ -188,7 +199,7 @@
     
       <url>
         <loc>https://www.qixiaodong.tk/cn/tools</loc>
-        <lastmod>2017-12-11T03:55:13+00:00</lastmod>
+        <lastmod>2018-01-23T05:53:07+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
        </url>
